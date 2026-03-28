@@ -47,8 +47,8 @@
     (function () {
       var menu = document.getElementById('fastmenu');
       var tab  = document.getElementById('fastmenuTab');
-      tab.addEventListener('mouseenter', function () { menu.classList.toggle('open'); });
-      document.addEventListener('mouseleave', function (e) {
+      tab.addEventListener('click', function () { menu.classList.toggle('open'); });
+      document.addEventListener('click', function (e) {
         if (!menu.contains(e.target)) menu.classList.remove('open');
       });
     })();
