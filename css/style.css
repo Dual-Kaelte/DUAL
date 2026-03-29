@@ -46,7 +46,7 @@ img, svg { display: block; max-width: 100%; }
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 75px 48px;
 }
 
 @media (max-width: 768px) {
@@ -761,8 +761,8 @@ img, svg { display: block; max-width: 100%; }
 .page-header p { font-size: 1rem; color: rgba(255,255,255,.65); max-width: 540px; line-height: 1.7; }
 
 /* ─── LEISTUNGEN PAGE ─────────────────────────────────── */
-.leistungen-section { padding: 60px 0; overflow-x: hidden; }
-.leistungen-section:nth-child(even) { background: var(--off-white); }
+.leistungen-section { padding:  0; overflow-x: hidden;  }
+.leistungen-section:nth-child(even) { background: var(--white); }
 
 .leistung-block {
   width: 100vw;
