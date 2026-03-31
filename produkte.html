@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produkte – DUAL Kälte- und Klimatechnik GmbH</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="43x43" href="favicon.png">
+  <link rel="icon" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="canonical" href="https://dual-kaelte.at/produkte.html">
+
+  <meta name="description"
+    content="Einschiebekühlpulte mit und ohne Aggregat – Made in Austria. Hochwertige Edelstahl-Kühlpulte für Gastronomie und Großküchen von DUAL Kälte- und Klimatechnik.">
+
+  <style>
+    /* ── Tabellen ─────────────────────────────── */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: .85rem;
+    }
+    .spec-table thead tr { background: var(--blue-light); }
+    .spec-table th {
+      padding: 11px 16px;
+      text-align: left;
+      font-weight: 700;
+      font-size: .73rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--blue-dark);
+      border-bottom: 2px solid var(--gray-200);
+      white-space: nowrap;
+    }
+    .spec-table td {
+      padding: 10px 16px;
+      color: var(--text);
+      border-bottom: 1px solid var(--gray-100);
+      vertical-align: middle;
+    }
+    .spec-table tbody tr:last-child td { border-bottom: none; }
+    .spec-table tbody tr:hover { background: var(--off-white); }
+    .spec-table tfoot td {
+      padding: 9px 16px;
+      font-size: .78rem;
+      color: var(--text-light);
+      background: var(--off-white);
+      font-style: italic;
+      border-top: 1px solid var(--gray-200);
+    }
+    .table-scroll {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+    }
+    .model-code {
+      font-family: 'Courier New', monospace;
+      font-weight: 700;
+      font-size: .82rem;
+      color: var(--blue-dark);
+      background: var(--blue-light);
+      padding: 3px 8px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+    .price-tag {
+      display: inline-block;
+      font-size: .73rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--gray-600);
+      background: var(--gray-100);
+      border: 1px solid var(--gray-200);
+      padding: 4px 11px;
+      border-radius: 100px;
+    }
+    /* ── Technische Daten Abschnitt ────────────── */
+    .tech-section {
+      padding: 72px 0 80px;
+      background: var(--off-white);
+    }
+    .tech-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .tech-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .tech-card-header {
+      background: var(--blue-light);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 12px 22px;
+    }
+    .tech-card-label {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+    /* ── Spec-Kästchen neben Text ───────────────── */
+    .spec-inline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .spec-inline-item {
+      background: var(--off-white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .spec-inline-item strong {
+      display: block;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+    .spec-inline-item span {
+      font-size: .9rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+    /* ── Zubehör-Grid ───────────────────────────── */
+    .zubehoer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .zubehoer-item {
+      padding: 18px 20px;
+      background: var(--off-white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+    .zubehoer-item:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow);
+    }
+    .zubehoer-item strong {
+      display: block;
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .zubehoer-item span {
+      font-size: .82rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      .zubehoer-grid { grid-template-columns: 1fr; }
+      .spec-inline { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════ FAST MENU ══════════════════ -->
+  <div id="fastmenu">
+    <div class="fastmenu-tab" id="fastmenuTab" title="Schnellmenü">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </div>
+    <div class="fastmenu-inner">
+      <a href="tel:+436602826586" class="fm-emergency">
+        <span class="fm-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </span>
+        +43 660 2826586
+      </a>
+      <a href="termin.html">
+        <span class="fm-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+        </span>
+        Termin buchen
+      </a>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var menu = document.getElementById('fastmenu');
+      var tab  = document.getElementById('fastmenuTab');
+      tab.addEventListener('mouseenter', function () { menu.classList.toggle('open'); });
+      document.addEventListener('mouseleave', function (e) {
+        if (!menu.contains(e.target)) menu.classList.remove('open');
+      });
+    })();
+  </script>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Startseite</a>
+      <a href="produkte.html" class="nav-link active">Produkte</a>
+      <a href="leistungen.html" class="nav-link">Leistungen</a>
+      <a href="ueber-uns.html" class="nav-link">Über Uns</a>
+      <a href="impressum.html" class="nav-link">Impressum</a>
+      <a href="termin.html" class="btn-book">Termin buchen</a>
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-mark">
+          <img src="Bilder/Logo1.png" alt="Logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DUAL</span>
+          <span class="brand-sub">Kälte- und Klimatechnik</span>
+        </div>
+      </a>
+    </nav>
+    <a href="tel:+436602826586" class="navbar-emergency-btn" aria-label="Notfall anrufen">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+      Notfall
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ══════════════════ MOBILE NAV ══════════════════ -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Startseite</a>
+    <a href="produkte.html">Produkte</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="ueber-uns.html">Über Uns</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="termin.html" class="btn-book">Termin buchen</a>
+  </div>
+  <script>
+    (function () {
+      var toggle  = document.getElementById('navToggle');
+      var nav     = document.getElementById('mobileNav');
+      var navbar  = document.getElementById('navbar');
+      function openNav()  { nav.classList.add('is-open'); }
+      function closeNav() { nav.classList.remove('is-open'); }
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        nav.classList.contains('is-open') ? closeNav() : openNav();
+      });
+      document.addEventListener('click', function (e) {
+        if (nav.classList.contains('is-open') &&
+            !nav.contains(e.target) &&
+            !toggle.contains(e.target)) { closeNav(); }
+      });
+      nav.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', closeNav); });
+      window.addEventListener('scroll', function () {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+      });
+    })();
+  </script>
+
+  <!-- ══════════════════ PAGE HEADER ══════════════════ -->
+  <div class="page-header">
+    <div class="page-header-glow"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <span>Produkte</span>
+      </div>
+      <h1>Einschiebekühl<em>pulte</em></h1>
+      <p>Hochwertige Edelstahl-Kühlpulte für Gastronomie und Großküchen – made in Austria. Steckerfertig oder für
+        den Anschluss an externe Kälteanlagen, in jeder Konfiguration erhältlich.</p>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       PRODUKTLINIE 1 – ESKPA (MIT AGGREGAT)
+  ══════════════════════════════════════════════════ -->
+  <section class="leistungen-section" id="mit-aggregat">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Einschiebekühlpulte <em>mit Aggregat</em></h2>
+        <p class="section-sub">Steckerfertig und sofort einsatzbereit – inkl. integriertem Kälteaggregat, Thermostat,
+          Abtauautomatik und Tauwasserverdunstung.</p>
+      </div>
+    </div>
+
+    <!-- Bild links – Überblick rechts -->
+    <div class="leistung-block">
+      <div class="leistung-visual">
+        <div class=" hero-slider" id="heroSlider">
+          <div class="hero-slide active"><img src="Bilder/kühlpulmit1.png" alt="Bild 1"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulmit2.png" alt="Bild 2"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulmit3.png" alt="Bild 4"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulmit4.png" alt="Bild 3"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulmit5.png" alt="Bild 5"></div>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+      <div class="leistung-text">
+        <h2>Steckerfertig &amp; sofort bereit</h2>
+        <p>Die ESKPA-Serie vereint das Kälteaggregat direkt im Pult. Einfach anschließen, einschalten – fertig.
+          Ideal für Gastronomie, Großküchen und den Lebensmittelhandel, wo schnelle Inbetriebnahme zählt.</p>
+        <p>Alle Frontteile aus gebürstetem Chrom Nickel Stahl 1.4301. Außenverkleidung in Edelstahl 1.4016 oder
+          Aluminium. Isolierung aus Polyurethan für maximale Energieeffizienz.</p>
+        <div class="spec-inline">
+          <div class="spec-inline-item">
+            <strong>Temperatur</strong>
+            <span>+2 / +8 °C</span>
+          </div>
+          <div class="spec-inline-item">
+            <strong>Spannung</strong>
+            <span>230 V / 50 Hz</span>
+          </div>
+          <div class="spec-inline-item">
+            <strong>Kältemittel</strong>
+            <span>R 134a</span>
+          </div>
+          <div class="spec-inline-item">
+            <strong>Kühlung</strong>
+            <span>Umluftkühlung</span>
+          </div>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="termin.html" class="btn-primary">Angebot anfordern</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modellvarianten als Cards -->
+    <div class="container" style="padding-top: 48px; padding-bottom: 64px;">
+      <div class="section-header">
+        <h2 class="section-title">Von 1 bis 5 <em>Module</em></h2>
+        <p class="section-sub">Jede Konfiguration ist auf Ihre Anforderungen abgestimmt – von der kompakten
+          Einzelstation bis zur großen Gastronomielösung.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="sc-img ">
+            <img src="Bilder/kühlpulmit1.png" alt="ESKPA 1 Modul">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">1 Modul · ESKPA/1M</span>
+            <h3>Einmodulig</h3>
+            <p>Breite 930 mm · 172 Liter · 220 W Kälteleistung. Verfügbar als 1 Tür, 2 Laden oder 3 Laden.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulmit2.png" alt="ESKPA 2 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">2 Module · ESKPA/2M</span>
+            <h3>Zweimodulig</h3>
+            <p>Breite 1510 mm · 344 Liter · 440 W Kälteleistung. Konfigurationen: 2T, 2L+2T, 4L, 3L+2L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulmit3.png" alt="ESKPA 3 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">3 Module · ESKPA/3M</span>
+            <h3>Dreimodulig</h3>
+            <p>Breite 2090 mm · 516 Liter · 700 W Kälteleistung. Konfigurationen: 3T, 4L+1T, 6L, 3L+4L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulmit4.png" alt="ESKPA 4 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">4 Module · ESKPA/4M</span>
+            <h3>Viermodulig</h3>
+            <p>Breite 2670 mm · 688 Liter · 1200 W Kälteleistung. Konfigurationen: 4T, 4L+2T, 8L, 3L+6L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card service-card-featured">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulmit5.png" alt="ESKPA 5 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">5 Module · ESKPA/5M</span>
+            <h3>Fünfmodulig</h3>
+            <p>Breite 3250 mm · 860 Liter · 1200 W Kälteleistung. Konfigurationen: 5T, 6L+2T, 10L, 3L+8L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img" style=" min-height: 180px;">
+            <img src="Bilder/kühlpult_hero.png" alt="Kühlpult Konfiguration">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag">Individuell</span>
+            <h3>Individuelle Konfiguration</h3>
+            <p>Jedes weitere Modul erweitert die Breite um 580 mm. Fronten in Wunschfarbe, Sockel und Schlösser auf
+              Anfrage erhältlich.</p>
+            <a href="termin.html" class="sc-link">Jetzt anfragen</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       PRODUKTLINIE 2 – ESKP (OHNE AGGREGAT)
+  ══════════════════════════════════════════════════ -->
+  <section class="leistungen-section" id="ohne-aggregat">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Einschiebekühlpulte <em>ohne Aggregat</em></h2>
+        <p class="section-sub">Mit Verdampfer und Expansionsventil R 134a – für den Anschluss an eine externe
+          Kälteanlage. Inkl. Temperaturregler und Tauwasserablauf.</p>
+      </div>
+    </div>
+
+    <!-- Bild links – Überblick rechts -->
+    <div class="leistung-block">
+      <div class="leistung-visual">
+              
+        <div class=" hero-slider" id="heroSlider1">
+          <div class="hero-slide active"><img src="Bilder/kühlpulohne1.png" alt="Bild 1"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulohne2.png" alt="Bild 2"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulohne3.png" alt="Bild 4"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulohne4.png" alt="Bild 3"></div>
+          <div class="hero-slide"><img src="Bilder/kühlpulohne5.png" alt="Bild 5"></div>
+          <div class="slider-dots" id="sliderDots1"></div>
+        </div>
+
+      </div>
+      <div class="leistung-text">
+        <h2>Flexibel an bestehende Anlagen anschließen</h2>
+        <p>Die ESKP-Serie ist die ideale Wahl, wenn bereits eine externe Kälteanlage vorhanden ist. Der Verdampfer
+          mit Edelstahlverkleidung und das Expansionsventil R 134a sind werkseitig montiert und geprüft.</p>
+        <p>Alle Frontteile aus gebürstetem Chrom Nickel Stahl 1.4301. Innenverkleidung matt. Isolierung aus
+          Polyurethan. Umluftkühlung für gleichmäßige Temperaturverteilung im Kühlraum.</p>
+        <div class="spec-inline">
+          <div class="spec-inline-item">
+            <strong>Temperatur</strong>
+            <span>+2 / +8 °C</span>
+          </div>
+          <div class="spec-inline-item">
+            <strong>Spannung</strong>
+            <span>230 V / 50 Hz</span>
+          </div>
+          <div class="spec-inline-item">
+            <strong>Kältemittel</strong>
+            <span>R 134a</span>
+          </div>
+          <div class="spec-inline-item">
+            <strong>Kühlung</strong>
+            <span>Umluftkühlung</span>
+          </div>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="termin.html" class="btn-primary">Angebot anfordern</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modellvarianten als Cards -->
+    <div class="container" style="padding-top: 48px; padding-bottom: 64px;">
+      <div class="section-header">
+        <h2 class="section-title">Von 1 bis 5 <em>Module</em></h2>
+        <p class="section-sub">Verdampfer wahlweise als Rückwand-, Seitenwand- oder Mittelwandverdampfer – je nach
+          Anforderung und verfügbarem Platzbedarf.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulohne1.png" alt="ESKP 1 Modul">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">1 Modul · ESKP/1M</span>
+            <h3>Einmodulig</h3>
+            <p>Breite 580–670 mm · 172 Liter · 220 W Kälteleistung. Als Rückwand- oder Seitenwandverdampfer.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulohne2.png" alt="ESKP 2 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">2 Module · ESKP/2M</span>
+            <h3>Zweimodulig</h3>
+            <p>Breite 1160 mm · 344 Liter · 440 W Kälteleistung. Konfigurationen: 2T, 2L+2T, 4L, 3L+2L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulohne3.png" alt="ESKP 3 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">3 Module · ESKP/3M</span>
+            <h3>Dreimodulig</h3>
+            <p>Breite 1740 mm · 516 Liter · 660 W Kälteleistung. Konfigurationen: 3T, 4L+1T, 6L, 3L+4L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulohne4.png" alt="ESKP 4 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">4 Module · ESKP/4M</span>
+            <h3>Viermodulig</h3>
+            <p>Breite 2320 mm · 688 Liter · 800 W Kälteleistung. Konfigurationen: 4T, 4L+2T, 8L, 3L+6L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card service-card-featured">
+          <div class="sc-img">
+            <img src="Bilder/kühlpulohne5.png" alt="ESKP 5 Module">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag sc-tag-blue">5 Module · ESKP/5M</span>
+            <h3>Fünfmodulig</h3>
+            <p>Breite 2900 mm · 860 Liter · 900 W Kälteleistung. Konfigurationen: 5T, 6L+2T, 10L, 3L+8L.</p>
+            <span class="price-tag">Preise auf Anfrage</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-img" style=" min-height: 180px;">
+            <img src="Bilder/kühlpult_hero.png" alt="ESKP Konfiguration">
+          </div>
+          <div class="sc-body">
+            <span class="sc-tag">Individuell</span>
+            <h3>Individuelle Konfiguration</h3>
+            <p>Aggregatkasten zum seitlichen Anbau möglich. I-Fach mit eingebauter Elektronik optional. Jedes weitere
+              Modul erweitert um 580 mm.</p>
+            <a href="termin.html" class="sc-link">Jetzt anfragen</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SONDERAUSSTATTUNG
+  ══════════════════════════════════════════════════ -->
+  <section class="leistungen-section" id="sonderausstattung">
+    <div class="container">
+      <div class="section-header centered" style="text-align: center;">
+        <h2 class="section-title">Sonderausstattung &amp; <em>Zubehör</em></h2>
+        <p class="section-sub" style="margin: 0 auto;">Alle Modelle sind individuell konfigurierbar – passend zu
+          Ihren Anforderungen und Ihrem Betrieb. Alle Aufpreisoptionen auf Anfrage.</p>
+      </div>
+      <div class="zubehoer-grid" style="margin-bottom: 40px;">
+        <div class="zubehoer-item">
+          <strong>Erhöhter Sockel</strong>
+          <span>Bis 150 mm Höhe – ideal für ergonomische Arbeitshöhen in der Gastronomie.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Schlösser pro Lade / Tür</strong>
+          <span>Für zusätzliche Sicherheit – Aufpreis pro Lade oder Tür erhältlich.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>3 Laden statt 2 Laden</strong>
+          <span>Aufpreis pro Modul für die Bestückung mit 3 Laden – mehr Stauraum auf gleicher Breite.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Dekorrahmen gebürstet</strong>
+          <span>Für Laden und Türen in Edelstahl 1.4301 gebürstet – für ein hochwertiges Erscheinungsbild.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Fronten in Wunschfarbe</strong>
+          <span>Fronten lackiert in Farbe nach Wunsch – für ein einheitliches Design in Ihrer Einrichtung.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Zwischenbord gelocht</strong>
+          <span>Pro Türelement optional – für eine übersichtliche und flexible Innenaufteilung.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Arbeitsplatte mit Wulstrand</strong>
+          <span>Edelstahl-Arbeitsplatte mit Wulstrand – praktisch, hygienisch und robust.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>I-Fach mit Elektronik</strong>
+          <span>ESKP-Serie: I-Fach bis 250 mm oder 500 mm mit eingebauter Elektronik erhältlich.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Aggregatkasten seitlich</strong>
+          <span>ESKP-Serie: Seitlich angebauter Aggregatkasten für Modelle ohne integriertes Aggregat.</span>
+        </div>
+        <div class="zubehoer-item">
+          <strong>Flaschensumpf &amp; Steckrahmen</strong>
+          <span>ESKPA-Serie: Steckerfertig mit Flaschensumpf und Steckrahmen als Aufpreisversion erhältlich.</span>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <span class="price-tag" style="font-size: .8rem; padding: 7px 18px;">Alle Aufpreisoptionen: Preise auf Anfrage</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       TECHNISCHE DATEN
+  ══════════════════════════════════════════════════ -->
+  <section class="tech-section" id="technische-daten">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technische <em>Daten</em></h2>
+        <p class="section-sub">Alle technischen Kennwerte und Abmessungen auf einen Blick – für beide
+          Produktlinien.</p>
+      </div>
+
+      <div class="tech-grid">
+
+        <!-- ESKPA Leistung -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-card-label">ESKPA · Mit Aggregat – Leistungsdaten</span>
+          </div>
+          <div class="table-scroll">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Modell</th>
+                  <th>Spannung</th>
+                  <th>Inhalt</th>
+                  <th>Kälteleistung</th>
+                  <th>Temperatur</th>
+                  <th>Preis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="model-code">ESKPA/1M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>172 L</td>
+                  <td>220 W (to −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/2M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>344 L</td>
+                  <td>440 W (to −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/3M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>516 L</td>
+                  <td>700 W (to −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/4M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>688 L</td>
+                  <td>1200 W (to −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/5M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>860 L</td>
+                  <td>1200 W (to −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="6">ESKPA = Einschiebekühlpult mit Aggregat · 1M = 1 Modul · 2M = 2 Module · usw.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- ESKPA Abmessungen -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-card-label">ESKPA · Mit Aggregat – Abmessungen</span>
+          </div>
+          <div class="table-scroll">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Modell</th>
+                  <th>Breite (mm)</th>
+                  <th>Tiefe (mm)</th>
+                  <th>Höhe o. Sockel (mm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="model-code">ESKPA/1M</span></td>
+                  <td>930</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/2M</span></td>
+                  <td>1510</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/3M</span></td>
+                  <td>2090</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/4M</span></td>
+                  <td>2670</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKPA/5M</span></td>
+                  <td>3250</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td>Weiteres Modul</td>
+                  <td>+ 580 je Modul</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Standardsockelhöhe 33 mm · Sockel bis 150 mm als Sonderausstattung</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- ESKP Leistung -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-card-label">ESKP · Ohne Aggregat – Leistungsdaten</span>
+          </div>
+          <div class="table-scroll">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Modell</th>
+                  <th>Spannung</th>
+                  <th>Inhalt</th>
+                  <th>Kälteleistung</th>
+                  <th>Temperatur</th>
+                  <th>Preis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="model-code">ESKP/1M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>172 L</td>
+                  <td>220 W (VT −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/2M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>344 L</td>
+                  <td>440 W (VT −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/3M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>516 L</td>
+                  <td>660 W (VT −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/4M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>688 L</td>
+                  <td>800 W (VT −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/5M</span></td>
+                  <td>230 V / 50 Hz</td>
+                  <td>860 L</td>
+                  <td>900 W (VT −10 °C)</td>
+                  <td>+2 / +8 °C</td>
+                  <td><span class="price-tag">Auf Anfrage</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="6">ESKP = Einschiebekühlpult ohne Aggregat · 1M = 1 Modul · 2M = 2 Module · usw.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- ESKP Abmessungen -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-card-label">ESKP · Ohne Aggregat – Abmessungen</span>
+          </div>
+          <div class="table-scroll">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Modell</th>
+                  <th>Breite (mm)</th>
+                  <th>Tiefe (mm)</th>
+                  <th>Höhe o. Sockel (mm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="model-code">ESKP/1M-RWV</span></td>
+                  <td>580</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/1M-SWV</span></td>
+                  <td>670</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/2M-MV</span></td>
+                  <td>1160</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/3M-MV</span></td>
+                  <td>1740</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/4M-MV</span></td>
+                  <td>2320</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td><span class="model-code">ESKP/5M-MV</span></td>
+                  <td>2900</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+                <tr>
+                  <td>Weiteres Modul</td>
+                  <td>+ 580 je Modul</td>
+                  <td>680 oder 580</td>
+                  <td>817</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Standardsockelhöhe 33 mm · RWV = Rückwandverdampfer · SWV = Seitenwandverdampfer · MV = Mittelwandverdampfer</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+      </div><!-- /tech-grid -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ CTA ══════════════════ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2>Passendes Modell nicht gefunden?</h2>
+          <p>Wir konfigurieren Ihr Einschiebekühlpult individuell nach Maß – sprechen Sie uns an und erhalten Sie ein
+            unverbindliches Angebot.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="termin.html" class="btn-primary btn-lg">Termin buchen</a>
+          <a href="tel:+436602826586" class="btn-ghost-white">Direkt anrufen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer-termin">
+    <p>© 2025 DUAL Kälte- und Klimatechnik GmbH · FN 665507 m · Alle Rechte vorbehalten</p>
+    <div class="footer-termin-links">
+      <img src="Bilder/stempel.png" style="height:100px;width:100px;" alt="">
+      <a href="index.html">Startseite</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="termin.html">Termin buchen</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('#heroSlider .hero-slide');
+      var dotsWrap = document.getElementById('sliderDots');
+      if (!slides.length) return;
+      var current = 0;
+
+      slides.forEach(function (_, i) {
+        var dot = document.createElement('span');
+        dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsWrap.appendChild(dot);
+      });
+
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dotsWrap.children[current].classList.remove('active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dotsWrap.children[current].classList.add('active');
+      }
+
+      setInterval(function () { goTo(current + 1); }, 3000);
+    })();
+  </script>
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('#heroSlider1 .hero-slide');
+      var dotsWrap = document.getElementById('sliderDots1');
+      if (!slides.length) return;
+      var current = 0;
+
+      slides.forEach(function (_, i) {
+        var dot = document.createElement('span');
+        dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsWrap.appendChild(dot);
+      });
+
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dotsWrap.children[current].classList.remove('active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dotsWrap.children[current].classList.add('active');
+      }
+
+      setInterval(function () { goTo(current + 1); }, 3000);
+    })();
+  </script>
+</body>
+</html>
