@@ -16,6 +16,8 @@
   <link rel="canonical" href="https://dual-kaelte.at/">
   <meta name="description"
     content="Vereinbaren Sie einfach einen Termin mit DUAL Kälte- & Klimatechnik – schnelle Beratung und zuverlässiger Service für Ihre Kälte- und Klimaanlagen.">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -280,6 +282,8 @@
               Meine Daten werden ausschließlich zur Bearbeitung meiner Terminanfrage verwendet und nicht an Dritte
               weitergegeben. <span class="req">*</span>
             </label>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LcDg6AsAAAAAK00yXOgymM-Q7cmRz8u-PY514G6" style="margin-top:15px;">
           </div>
         </div>
 
@@ -585,6 +589,13 @@
     });
 
     function submitForm() {
+
+      const recaptcha = grecaptcha.getResponse();
+      if (!recaptcha) {
+        alert("Bitte bestätigen Sie, dass Sie kein Roboter sind.");
+        return;
+      }
+
       const fname = document.getElementById('fname').value.trim();
       const lname = document.getElementById('lname').value.trim();
       const phone = document.getElementById('phone').value.trim();
