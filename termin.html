@@ -15,9 +15,7 @@
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="canonical" href="https://dual-kaelte.at/">
   <meta name="description"
-    content="Vereinbaren Sie einfach einen Termin mit DUAL Kälte- & Klimatechnik – schnelle Beratung und zuverlässiger Service für Ihre Kälte- und Klimaanlagen.">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    content="Informationen zu unserer aktuellen Terminverfügbarkeit bei DUAL Kälte- & Klimatechnik.">
 </head>
 
 <body>
@@ -133,213 +131,41 @@
         <span>Termin buchen</span>
       </div>
       <h1>Termin<br><em>Vereinbaren</em></h1>
-      <p>Buchen Sie Ihren Termin bequem online – wir kümmern uns um den Rest.</p>
+      <p>Aktuelle Informationen zu unserer Terminverfügbarkeit.</p>
     </div>
   </div>
 
   <!-- BOOKING LAYOUT -->
   <div class="booking-layout">
 
-    <!-- MAIN FORM -->
+    <!-- MAIN NOTICE -->
     <div>
-      <div class="steps" id="steps-bar">
-        <div class="step active" id="step-1" onclick="goStep(1)">
-          <div class="step-num">1</div>
-          <div class="step-label">Leistung</div>
-        </div>
-        <div class="step" id="step-2" onclick="goStep(2)">
-          <div class="step-num">2</div>
-          <div class="step-label">Datum & Zeit</div>
-        </div>
-        <div class="step" id="step-3" onclick="goStep(3)">
-          <div class="step-num">3</div>
-          <div class="step-label">Kontakt</div>
-        </div>
-      </div>
-
       <div class="form-card">
-
-        <!-- STEP 1 -->
-        <div class="form-section visible" id="section-1">
-          <div class="form-section-title">Welche Leistung benötigen Sie?</div>
-          <div class="form-section-sub">Bitte wählen Sie den passenden Service für Ihr Anliegen.</div>
-          <div class="service-grid">
-            <div>
-              <input type="radio" name="service" id="svc-klima" value="Klimaanlage Installation" class="service-option">
-              <label for="svc-klima" class="service-label">
-                <div class="svc-icon"></div>
-                <div class="svc-info"><strong>Klimaanlage Installation</strong><span>Neu-Montage & Inbetriebnahme</span>
-                </div>
-              </label>
-            </div>
-            <div>
-              <input type="radio" name="service" id="svc-wartung" value="Wartung & Service" class="service-option">
-              <label for="svc-wartung" class="service-label">
-                <div class="svc-icon"></div>
-                <div class="svc-info"><strong>Wartung & Service</strong><span>Inspektion & Reinigung</span></div>
-              </label>
-            </div>
-            <div>
-              <input type="radio" name="service" id="svc-reparatur" value="Reparatur / Störung" class="service-option">
-              <label for="svc-reparatur" class="service-label">
-                <div class="svc-icon"></div>
-                <div class="svc-info"><strong>Reparatur / Störung</strong><span>Fehlerdiagnose & Behebung</span></div>
-              </label>
-            </div>
-            <div>
-              <input type="radio" name="service" id="svc-kuehl" value="Kühlanlagen (Kältetechnik)"
-                class="service-option">
-              <label for="svc-kuehl" class="service-label">
-                <div class="svc-icon"></div>
-                <div class="svc-info"><strong>Kühlanlagen</strong><span>Kühlzelle, Kühlpult, Verbund</span></div>
-              </label>
-            </div>
-            <div>
-              <input type="radio" name="service" id="svc-waerme" value="Wärmepumpe" class="service-option">
-              <label for="svc-waerme" class="service-label">
-                <div class="svc-icon"></div>
-                <div class="svc-info"><strong>Angebot anfordern</strong><span>Jetzt Angebot erhalten</span></div>
-              </label>
-            </div>
-            <div>
-              <input type="radio" name="service" id="svc-beratung" value="Sonderlösungen" class="service-option">
-              <label for="svc-beratung" class="service-label">
-                <div class="svc-icon"></div>
-                <div class="svc-info"><strong>Sonderlösungen</strong><span>Individuelle Planung</span></div>
-              </label>
-            </div>
+        <div class="form-section visible">
+          <div class="form-section-title">Terminvereinbarung derzeit nicht möglich</div>
+          <div class="form-section-sub" style="margin-bottom: 24px;">
+            Wir bedanken uns für Ihr Interesse an den Leistungen der DUAL Kälte- und Klimatechnik GmbH.
           </div>
-        </div>
-
-        <!-- STEP 2 -->
-        <div class="form-section" id="section-2">
-          <div class="form-section-title">Wunschtermin wählen</div>
-          <div class="form-section-sub">Grüne Punkte = verfügbar · Rote Punkte = letzte freie Plätze</div>
-          <div class="calendar-wrap">
-            <div class="cal-nav">
-              <button onclick="prevMonth()" aria-label="Vorheriger Monat">‹</button>
-              <div class="cal-month" id="cal-month-label"></div>
-              <button onclick="nextMonth()" aria-label="Nächster Monat">›</button>
-            </div>
-            <div class="cal-grid" id="cal-grid"></div>
-          </div>
-          <div class="slots-title">Verfügbare Uhrzeiten</div>
-          <div class="slots-grid" id="slots-grid">
-            <div style="grid-column:1/-1;color:var(--gray-400);font-size:.85rem;padding:8px 0">Bitte wählen Sie zuerst
-              ein Datum.</div>
-          </div>
-        </div>
-
-        <!-- STEP 3 -->
-        <div class="form-section" id="section-3">
-          <div class="form-section-title">Ihre Kontaktdaten</div>
-          <div class="form-section-sub">Felder mit <span style="color:var(--red)">*</span> sind Pflichtfelder.</div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Vorname <span class="req">*</span></label>
-              <input type="text" id="fname" placeholder="Max" required autocomplete="given-name">
-            </div>
-            <div class="form-group">
-              <label>Nachname <span class="req">*</span></label>
-              <input type="text" id="lname" placeholder="Mustermann" required autocomplete="family-name">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Telefon <span class="req">*</span></label>
-              <input type="tel" id="phone" placeholder="+43 660 XXXXXXX" required autocomplete="tel">
-            </div>
-            <div class="form-group">
-              <label>E-Mail <span class="req">*</span></label>
-              <input type="email" id="email" placeholder="max@muster.at" required autocomplete="email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Adresse (Einsatzort) <span class="req">*</span></label>
-            <input type="text" id="address" placeholder="Musterstraße 1, 4050 Traun" required
-              autocomplete="street-address">
-          </div>
-          <div class="form-group">
-            <label>Objekttyp</label>
-            <select id="objtype">
-              <option value="">Bitte wählen...</option>
-              <option>Privatwohnung / Haus</option>
-              <option>Büro / Gewerbe</option>
-              <option>Gastronomie / Restaurant</option>
-              <option>Supermarkt / Handel</option>
-              <option>Sonstiges</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Nachricht / Anmerkungen</label>
-            <textarea id="message"
-              placeholder="Beschreiben Sie kurz Ihr Anliegen, z. B. Anlagentyp, Störungsbild, Raumgröße etc."></textarea>
-          </div>
-          <div class="privacy-row">
-            <input type="checkbox" id="privacy">
-            <label for="privacy">
-              Ich stimme der Verarbeitung meiner Daten gemäß der <a href="impressum.html">Datenschutzerklärung</a> zu.
-              Meine Daten werden ausschließlich zur Bearbeitung meiner Terminanfrage verwendet und nicht an Dritte
-              weitergegeben. <span class="req">*</span>
-            </label>
-          </div>
-          <div class="g-recaptcha" data-sitekey="6LcDg6AsAAAAAK00yXOgymM-Q7cmRz8u-PY514G6" style="margin-top:15px;">
-          </div>
-        </div>
-
-        <!-- SUCCESS -->
-        <div class="success-view" id="success-view">
-          <div class="success-icon">✓</div>
-          <h2>Anfrage erhalten!</h2>
-          <p>Vielen Dank für Ihre Terminanfrage. Wir werden uns so bald wie möglich bei Ihnen melden – in der Regel
-            innerhalb eines Werktages.</p>
-          <div class="booking-ref" id="booking-ref">KT-000000</div>
-          <a href="index.html" class="btn-primary">← Zurück zur Startseite</a>
-        </div>
-
-        <!-- ERROR -->
-        <div class="error-view" id="error-view">
-          <div class="error-icon">✕</div>
-          <h2>Fehler beim Senden</h2>
-          <p>Es ist leider ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt:</p>
-          <p style="margin-bottom:20px"><a href="tel:+436602826586" style="color:var(--blue);font-weight:700">+43 660
-              2826586</a></p>
-          <button onclick="resetError()" class="btn-primary">Erneut versuchen</button>
-        </div>
-
-        <div class="form-footer" id="form-footer">
-          <button class="btn-back" id="btn-back" onclick="prevStep()" style="visibility:hidden">← Zurück</button>
-          <button class="btn-next" id="btn-next" onclick="nextStep()">Weiter →</button>
+          <p style="color: var(--gray-500, #555); line-height: 1.8; font-size: 0.98rem; margin-bottom: 18px;">
+            Aufgrund der hohen Nachfrage sind unsere Kapazitäten für Kundentermine derzeit vollständig
+            ausgelastet. Um Ihnen weiterhin die gewohnte Qualität und Sorgfalt bei jedem Einsatz garantieren
+            zu können, nehmen wir bis auf Weiteres keine neuen Terminanfragen über unsere Online-Buchung entgegen.
+          </p>
+          <p style="color: var(--gray-500, #555); line-height: 1.8; font-size: 0.98rem; margin-bottom: 18px;">
+            Ab dem <strong>01. Februar 2027</strong> stehen Ihnen wieder freie Termine zur Verfügung. Ab diesem
+            Zeitpunkt können Sie über diese Seite erneut bequem einen Wunschtermin vereinbaren.
+          </p>
+          <p style="color: var(--gray-500, #555); line-height: 1.8; font-size: 0.98rem; margin-bottom: 0;">
+            Für dringende Anliegen oder akute Störungen stehen wir Ihnen selbstverständlich weiterhin über
+            unseren Notdienst zur Verfügung. Wir bitten um Ihr Verständnis und bedanken uns herzlich für Ihre
+            Geduld.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-      <div class="info-card">
-        <div class="info-card-header">
-          <h3>Ihre Buchungsübersicht</h3>
-        </div>
-        <div class="info-card-body">
-          <div class="summary-row">
-            <span class="label">Leistung</span>
-            <span class="value empty" id="sum-service">Nicht gewählt</span>
-          </div>
-          <div class="summary-row">
-            <span class="label">Datum</span>
-            <span class="value empty" id="sum-date">Nicht gewählt</span>
-          </div>
-          <div class="summary-row">
-            <span class="label">Uhrzeit</span>
-            <span class="value empty" id="sum-time">Nicht gewählt</span>
-          </div>
-          <div class="summary-row">
-            <span class="label">Kontakt</span>
-            <span class="value empty" id="sum-contact">Nicht gewählt</span>
-          </div>
-        </div>
-      </div>
-
       <div class="info-card">
         <div class="info-card-header">
           <h3>Kontakt & Erreichbarkeit</h3>
@@ -406,262 +232,6 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-  <script>
-    const EMAILJS_PUBLIC_KEY = '2H22GBeBMjt_1QRBS';
-    const EMAILJS_SERVICE_ID = 'service_wac0tun';
-    const EMAILJS_TEMPLATE_ID = 'template_s3gh4e2';
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-
-    const BLOCKED_KEY = 'dual_blocked_days';
-    function getBlockedDays() {
-      try { return JSON.parse(localStorage.getItem(BLOCKED_KEY) || '[]'); }
-      catch { return []; }
-    }
-    function blockDay(dateStr) {
-      const b = getBlockedDays();
-      if (!b.includes(dateStr)) { b.push(dateStr); localStorage.setItem(BLOCKED_KEY, JSON.stringify(b)); }
-    }
-    function toDateStr(y, m, d) {
-      return y + '-' + String(m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
-    }
-    function getPreBlockedSet() {
-      const s = new Set();
-      const today = new Date(); today.setHours(0, 0, 0, 0);
-      s.add(toDateStr(today.getFullYear(), today.getMonth(), today.getDate()));
-      let count = 0, cur = new Date(today);
-      while (count < 7) {
-        cur = new Date(cur.getTime() + 86400000);
-        if (cur.getDay() !== 0 && cur.getDay() !== 6) {
-          s.add(toDateStr(cur.getFullYear(), cur.getMonth(), cur.getDate()));
-          count++;
-        }
-      }
-      return s;
-    }
-    function isDayBlocked(y, m, d) {
-      const ds = toDateStr(y, m, d);
-      return getPreBlockedSet().has(ds) || getBlockedDays().includes(ds);
-    }
-
-    let currentStep = 1;
-    let selectedDate = null;
-    let selectedTime = null;
-    let calYear = new Date().getFullYear();
-    let calMonth = new Date().getMonth();
-
-    const MONTHS = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
-      'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
-    const DAYS = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
-    const SLOT = '08:00';
-
-    function renderCalendar() {
-      document.getElementById('cal-month-label').textContent = MONTHS[calMonth] + ' ' + calYear;
-      const grid = document.getElementById('cal-grid');
-      grid.innerHTML = '';
-      DAYS.forEach(d => {
-        const el = document.createElement('div');
-        el.className = 'cal-dow'; el.textContent = d;
-        grid.appendChild(el);
-      });
-      const firstDay = new Date(calYear, calMonth, 1).getDay();
-      const offset = (firstDay === 0) ? 6 : firstDay - 1;
-      const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
-      const today = new Date(); today.setHours(0, 0, 0, 0);
-
-      for (let i = 0; i < offset; i++) {
-        const e = document.createElement('div'); e.className = 'cal-day empty'; grid.appendChild(e);
-      }
-      for (let d = 1; d <= daysInMonth; d++) {
-        const date = new Date(calYear, calMonth, d);
-        const dow = date.getDay();
-        const el = document.createElement('div');
-        el.className = 'cal-day';
-        el.textContent = d;
-        const isPast = date < today;
-        const isWkend = dow === 0 || dow === 6;
-        const blocked = isDayBlocked(calYear, calMonth, d);
-        if (isPast || isWkend) {
-          el.classList.add('past');
-        } else if (blocked) {
-          el.classList.add('past', 'limited');
-          el.title = 'Vollgebucht';
-        } else {
-          el.classList.add('available');
-          if (date.toDateString() === new Date().toDateString()) el.classList.add('today');
-          if (selectedDate && selectedDate.y === calYear && selectedDate.m === calMonth && selectedDate.d === d)
-            el.classList.add('selected');
-          el.addEventListener('click', () => selectDate(d));
-        }
-        grid.appendChild(el);
-      }
-    }
-
-    function selectDate(d) {
-      selectedDate = { y: calYear, m: calMonth, d };
-      selectedTime = SLOT;
-      renderCalendar(); renderSlots(); updateSummary();
-    }
-
-    function renderSlots() {
-      const grid = document.getElementById('slots-grid');
-      grid.innerHTML = '';
-      if (!selectedDate) {
-        grid.innerHTML = '<div style="grid-column:1/-1;color:var(--gray-400);font-size:.85rem;padding:8px 0">Bitte wählen Sie zuerst ein Datum.</div>';
-        return;
-      }
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'slot-btn selected';
-      btn.textContent = 'Vormittags';
-      grid.appendChild(btn);
-      const note = document.createElement('div');
-      note.style.cssText = 'grid-column:1/-1;font-size:.8rem;color:var(--gray-400);padding:6px 0';
-      note.textContent = 'Pro Tag ist genau ein Termin verfügbar. Die genaue Uhrzeit stimmen wir telefonisch ab.';
-      grid.appendChild(note);
-    }
-
-    function prevMonth() { if (calMonth === 0) { calMonth = 11; calYear--; } else calMonth--; renderCalendar(); }
-    function nextMonth() { if (calMonth === 11) { calMonth = 0; calYear++; } else calMonth++; renderCalendar(); }
-
-    function goStep(n) { if (n < currentStep) setStep(n); }
-
-    function setStep(n) {
-      document.querySelectorAll('.form-section').forEach(s => s.classList.remove('visible'));
-      const sec = document.getElementById('section-' + n);
-      if (sec) sec.classList.add('visible');
-      document.querySelectorAll('.step').forEach((s, i) => {
-        s.classList.remove('active', 'done');
-        if (i + 1 < n) s.classList.add('done');
-        if (i + 1 === n) s.classList.add('active');
-      });
-      const back = document.getElementById('btn-back');
-      const next = document.getElementById('btn-next');
-      back.style.visibility = n > 1 ? 'visible' : 'hidden';
-      if (n === 3) { next.textContent = 'Termin absenden ✓'; next.classList.add('btn-submit'); }
-      else { next.textContent = 'Weiter →'; next.classList.remove('btn-submit'); }
-      currentStep = n;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function nextStep() {
-      if (currentStep === 1) {
-        const svc = document.querySelector('input[name="service"]:checked');
-        if (!svc) { alert('Bitte wählen Sie eine Leistung aus.'); return; }
-        document.getElementById('sum-service').textContent = svc.value;
-        document.getElementById('sum-service').classList.remove('empty');
-        setStep(2);
-      } else if (currentStep === 2) {
-        if (!selectedDate) { alert('Bitte wählen Sie ein Datum aus.'); return; }
-        setStep(3);
-      } else if (currentStep === 3) {
-        submitForm();
-      }
-    }
-
-    function prevStep() { if (currentStep > 1) setStep(currentStep - 1); }
-
-    function updateSummary() {
-      if (selectedDate) {
-        const d = String(selectedDate.d).padStart(2, '0') + '.' +
-          String(selectedDate.m + 1).padStart(2, '0') + '.' + selectedDate.y;
-        document.getElementById('sum-date').textContent = d;
-        document.getElementById('sum-date').classList.remove('empty');
-      }
-      if (selectedTime) {
-        document.getElementById('sum-time').textContent = 'Vormittags (nach Absprache)';
-        document.getElementById('sum-time').classList.remove('empty');
-      }
-    }
-
-    ['fname', 'lname'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('input', () => {
-        const f = document.getElementById('fname').value.trim();
-        const l = document.getElementById('lname').value.trim();
-        if (f || l) {
-          const s = document.getElementById('sum-contact');
-          s.textContent = (f + ' ' + l).trim();
-          s.classList.remove('empty');
-        }
-      });
-    });
-
-    function submitForm() {
-
-      const recaptcha = grecaptcha.getResponse();
-      if (!recaptcha) {
-        alert("Bitte bestätigen Sie, dass Sie kein Roboter sind.");
-        return;
-      }
-
-      const fname = document.getElementById('fname').value.trim();
-      const lname = document.getElementById('lname').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const address = document.getElementById('address').value.trim();
-      const privacy = document.getElementById('privacy').checked;
-      const objtype = document.getElementById('objtype').value || 'Nicht angegeben';
-      const message = document.getElementById('message').value.trim() || 'Keine Nachricht';
-      const service = document.querySelector('input[name="service"]:checked').value;
-
-      if (!fname || !lname || !phone || !email || !address) {
-        alert('Bitte füllen Sie alle Pflichtfelder aus.'); return;
-      }
-      if (!privacy) { alert('Bitte stimmen Sie der Datenschutzerklärung zu.'); return; }
-
-      const btn = document.getElementById('btn-next');
-      btn.textContent = 'Wird gesendet...';
-      btn.disabled = true;
-
-      const datum = String(selectedDate.d).padStart(2, '0') + '.' +
-        String(selectedDate.m + 1).padStart(2, '0') + '.' + selectedDate.y;
-      const ref = 'KT-' + Math.floor(100000 + Math.random() * 900000);
-
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        service, datum,
-        uhrzeit: 'Vormittags (genaue Zeit wird telefonisch abgestimmt)',
-        name: fname + ' ' + lname,
-        vorname: fname,
-        telefon: phone,
-        email,
-        to_email: email,
-        reply_to: 'office@dual-kaelte.at',
-        adresse: address,
-        objekttyp: objtype,
-        nachricht: message,
-        referenz: ref
-      })
-        .then(() => {
-          blockDay(toDateStr(selectedDate.y, selectedDate.m, selectedDate.d));
-          document.getElementById('booking-ref').textContent = ref;
-          document.getElementById('steps-bar').style.display = 'none';
-          document.getElementById('form-footer').style.display = 'none';
-          document.querySelectorAll('.form-section').forEach(s => s.classList.remove('visible'));
-          document.getElementById('success-view').classList.add('visible');
-        })
-        .catch(err => {
-          console.error('EmailJS Fehler:', err);
-          btn.textContent = 'Termin absenden ✓'; btn.disabled = false;
-          document.getElementById('steps-bar').style.display = 'none';
-          document.getElementById('form-footer').style.display = 'none';
-          document.querySelectorAll('.form-section').forEach(s => s.classList.remove('visible'));
-          document.getElementById('error-view').classList.add('visible');
-        });
-    }
-
-    function resetError() {
-      document.getElementById('error-view').classList.remove('visible');
-      document.getElementById('steps-bar').style.display = 'flex';
-      document.getElementById('form-footer').style.display = 'flex';
-      const btn = document.getElementById('btn-next');
-      btn.textContent = 'Termin absenden ✓'; btn.disabled = false;
-      setStep(3);
-    }
-
-    renderCalendar();
-  </script>
 </body>
 
 </html>
