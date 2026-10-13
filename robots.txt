@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dual-kaelte.at/sitemap.xml
